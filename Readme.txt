@@ -7,7 +7,7 @@ La página web se encuentra en Github.
 Se entregan los siguientes Links de respaldo:
 
 Link del Repositorio:
-
+https://github.com/PamelaOriana1993Marzo20/GATUNOS-M1.git
 
 Link del despliegue de la página con Github page:
-
+https://pamelaoriana1993marzo20.github.io/GATUNOS-M1/
