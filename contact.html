@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fundación Gatunos</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <link href="img/patita.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">GATUNOS</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Buscan Hogar</a></li>
+          <li class="active"><a href="contact.html" class="smoothscroll">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="contactwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h2 class="centered">Formulario de Contacto</h2>
+            <form id="mi-formulario" action="" method="post">
+
+            <div class="form-group">
+              <p>
+              <label for="correo">Correo electrónico </label>
+              <input id="correo" type="email" class="form-control" name="correo" required>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="run">Run </label>
+              <input id="run" class="form-control" name="run" type="number" required>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="digitoverificador">Dígito Verificador </label>
+              <input id="digitoverificador" name="digitoverificador" class="form-control" type="number" maxlength="1" required>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="nombre">Nombre Completo </label>
+              <input id="nombre" class="form-control" name="nombre" type="text" required>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="nacimiento">Fecha de nacimiento </label>
+              <input id="nacimiento" class="form-control" name="nacimiento" type="date" max="2000-12-31" required>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="telefono">Teléfono de contacto </label>
+              <input id="telefono" class="form-control" name="telefono" type="number" required>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="region">Región </label>
+              <select class="form-control" name="region" required>  
+                <option value="">Selecciona tu Región</option>
+                <option value="1">Región de Arica y Parinacota</option>
+                <option value="2">Región de Tarapacá</option>
+                <option value="3">Región de Antofagasta</option>
+                <option value="4">Región de Atacama</option>
+                <option value="5">Región de Coquimbo</option>
+                <option value="6">Región de Valparaíso</option>
+                <option value="7">Región Metropolitana de Santiago</option>
+                <option value="8">Región del Libertador General Bernardo O’Higgins</option>
+                <option value="9">Región del Maule</option>
+                <option value="10">Región del Ñuble</option>
+                <option value="11">Región del Biobío</option>
+                <option value="12">Región de La Araucanía</option>
+                <option value="13">Región de Los Ríos</option>
+                <option value="14">Región de Los Lagos</option>
+                <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
+                <option value="16">Región de Magallanes y la Antártica Chilena</option>              
+              </select>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+              <label for="Ciudad">Ciudad </label>
+              <select class="form-control" name="ciudad" required>
+                  <option value="">Selecciona tu Ciudad</option>
+                  <optgroup label="Arica y Parinacota"> 
+                    <option value="1">Putre</option>
+                    <option value="2">Arica</option>
+                  </optgroup> 
+                  <optgroup label="Tarapacá"> 
+                    <option value="3">Pozo Almonte</option>
+                    <option value="4">Iquique</option>
+                    <option value="5">Alto Hospicio</option>
+                  </optgroup> 
+                  <optgroup label="Antofagasta">
+                    <option value="6">Tocopilla</option>
+                    <option value="7">Taltal</option>
+                    <option value="8">San Pedro de Atacama</option>
+                    <option value="9">Mejillones</option>
+                    <option value="10">Calama</option>
+                    <option value="11">Antofagasta</option>
+                  </optgroup>
+                  <optgroup label="Atacama">
+                    <option value="12">Vallenar</option>
+                    <option value="13">Tierra Amarilla</option>
+                    <option value="14">Huasco</option>
+                    <option value="15">Diego de Almagro</option>
+                    <option value="16">El Salvador</option>
+                    <option value="17">Copiapó</option>
+                    <option value="18">Chañaral</option>
+                    <option value="19">Caldera</option>
+                  </optgroup>
+                  <optgroup label="Coquimbo">
+                    <option value="20">Vicuña</option>
+                    <option value="21">Salamanca</option>
+                    <option value="22">Punitaqui</option>
+                    <option value="23">Ovalle</option>
+                    <option value="24">Monte Patria</option>
+                    <option value="25">El Palqui</option>
+                    <option value="26">Los Vilos</option>
+                    <option value="27">La Serena</option>
+                    <option value="28">Illapel</option>
+                    <option value="29">La Serena</option>
+                    <option value="30">Tongoy</option>
+                    <option value="31">Combarbalá</option>
+                    <option value="32">Andacollo</option>
+                  </optgroup>
+                  <optgroup label="Valparaiso">
+                    <option value="33">Viña del Mar</option>
+                    <option value="34">Villa Alemana</option>
+                    <option value="35">Valparaíso</option>
+                    <option value="36">Santo Domingo</option>
+                    <option value="37">Santa María</option>
+                    <option value="38">San Felipe</option>
+                    <option value="39">San Esteban</option>
+                    <option value="40">San Antonio</option>
+                    <option value="41">Rinconada</option>
+                    <option value="42">Quintero</option>
+                    <option value="43">Quilpue</option>
+                    <option value="44">Quillota</option>
+                    <option value="45">Putaendo</option>
+                    <option value="46">Puchuncaví</option>
+                    <option value="47">Placilla de Peñuelas</option>
+                    <option value="48">Olmué</option>
+                    <option value="49">Nogales</option>
+                    <option value="50">Los Andes</option>
+                    <option value="51">Llaillay</option>
+                    <option value="52">Limache</option>
+                    <option value="53">Puchuncaví</option>
+                    <option value="54">La Ligua</option>
+                    <option value="55">La Cruz</option>
+                    <option value="56">La Calera</option>
+                    <option value="57">Hanga roa</option>
+                    <option value="58">Hijuelas</option>
+                    <option value="59">El Tabo</option>
+                    <option value="60">Las Cruces (San Antonio)</option>
+                    <option value="61">El Quisco</option>
+                    <option value="62">Nogales</option>
+                    <option value="63">Concon</option>
+                    <option value="64">Catemu</option>
+                    <option value="65">Casablanca</option>
+                    <option value="66">Cartagena</option>
+                    <option value="67">Calle Larga</option>
+                    <option value="68">Cabildo</option>
+                    <option value="69">Algarrobo</option>
+                  </optgroup>
+                  <optgroup label="Libertador Bernardo O'higgins">
+                    <option value="70">Santa Cruz</option>
+                    <option value="71">San Vicente de tagua tagua</option>
+                    <option value="72">San Fernando</option>
+                    <option value="73">Requínoa</option>
+                    <option value="74">Rengo</option>
+                    <option value="75">Rancagua</option>
+                    <option value="76">Quinta de Tilcoco</option>
+                    <option value="77">Pichilemu</option>
+                    <option value="78">Pichidegua</option>
+                    <option value="79">Peumo</option>
+                    <option value="80">Peralillo</option>
+                    <option value="81">Gultro (Rancagua)</option>
+                    <option value="82">Nancagua</option>
+                    <option value="83">San Francisco de Mostazal</option>
+                    <option value="84">La Punta</option>
+                    <option value="85">Machali</option>
+                    <option value="86">Doñihue</option>
+                    <option value="87">Las Cabras</option>
+                    <option value="88">Graneros</option>
+                    <option value="89">Doñihue</option>
+                    <option value="90">Coltauco</option>
+                    <option value="91">Codegua</option>
+                    <option value="92">Chimbarongo</option>
+                    <option value="93">Chépica</option>
+                  </optgroup>
+                  <optgroup label="Maule">
+                    <option value="94">Villa Alegre</option>
+                    <option value="95">Teno</option>
+                    <option value="96">Talca</option>
+                    <option value="97">San Javier</option>
+                    <option value="98">San Clemente</option>
+                    <option value="99">Romeral</option>
+                    <option value="100">Retiro</option>
+                    <option value="101">Rauco</option>
+                    <option value="102">Parral</option>
+                    <option value="103">Molina</option>
+                    <option value="104">Culenar</option>
+                    <option value="105">Maule</option>
+                    <option value="106">Longaví</option>
+                    <option value="107">Linares</option>
+                    <option value="108">Hualañé</option>
+                    <option value="109">Curicó</option>
+                    <option value="110">Constitución</option>
+                    <option value="111">Colbún</option>
+                    <option value="112">Cauquenes</option>
+                  </optgroup>
+                  <optgroup label="Ñuble">
+                    <option value="113">Yungay</option>
+                    <option value="114">San Carlos</option>
+                    <option value="115">Quirihue</option>
+                    <option value="116">Quillón</option>
+                    <option value="117">Coihueco</option>
+                    <option value="118">Coelemu</option>
+                    <option value="119">Chillán Viejo</option>
+                    <option value="120">Chillán</option>
+                    <option value="121">Bulnes</option>
+                  </optgroup>
+                  <optgroup label="Biobío">
+                    <option value="122">Yumbel</option>
+                    <option value="123">Huelpin</option>
+                    <option value="124">Tome</option>
+                    <option value="125">Talcahuano</option>
+                    <option value="126">Santa Juana</option>
+                    <option value="127">Santa Bárbara</option>
+                    <option value="128">San Pedro de la Paz</option>
+                    <option value="129">Penco</option>
+                    <option value="130">Nacimiento</option>
+                    <option value="131">Mulchén</option>
+                    <option value="132">Cabrero</option>
+                    <option value="133">Lota</option>
+                    <option value="134">Los Ángeles</option>
+                    <option value="135">Los Álamos</option>
+                    <option value="136">Lebu</option>
+                    <option value="137">La Laja</option>
+                    <option value="138">Hualqui</option>
+                    <option value="139">Hualpen</option>
+                    <option value="140">Curanilahue</option>
+                    <option value="141">Coronel</option>
+                    <option value="142">Concepción</option>
+                    <option value="143">Chiguayante</option>
+                    <option value="144">Cañete</option>
+                    <option value="145">Cabrero</option>
+                    <option value="146">Arauco</option>
+                    <option value="147">Laraquete</option>
+                  </optgroup>
+                  <optgroup label="La araucanía">
+                    <option value="148">Villarrica</option>
+                    <option value="149">Vilcún</option>
+                    <option value="150">Victoria</option>
+                    <option value="151">Traiguén</option>
+                    <option value="152">Temuco</option>
+                    <option value="153">Renaico</option>
+                    <option value="154">Purén</option>
+                    <option value="155">Pucón</option>
+                    <option value="156">Pitrufquén</option>
+                    <option value="157">Padre las Casas</option>
+                    <option value="158">Nueva Imperial</option>
+                    <option value="159">Loncoche</option>
+                    <option value="160">Lautaro</option>
+                    <option value="161">Labranza</option>
+                    <option value="162">Gorbea</option>
+                    <option value="163">Freire</option>
+                    <option value="164">Curacautín</option>
+                    <option value="165">Cunco</option>
+                    <option value="166">Collipulli</option>
+                    <option value="167">Carahue</option>
+                    <option value="168">Vilcún</option>
+                    <option value="169">Angol</option>
+                  </optgroup>
+                  <optgroup label="Los Ríos">
+                    <option value="170">Valdivia</option>
+                    <option value="171">Río Bueno</option>
+                    <option value="172">Panguipulli</option>
+                    <option value="173">Paillaco</option>
+                    <option value="174">San jose de la Mariquina</option>
+                    <option value="175">Los Lagos</option>
+                    <option value="176">Lanco</option>
+                    <option value="177">La Unión</option>
+                    <option value="178">Futrono</option>
+                  </optgroup>
+                  <optgroup label="Los lagos">
+                    <option value="179">Río Negro</option>
+                    <option value="180">Quellón</option>
+                    <option value="181">Purranque</option>
+                    <option value="182">Puerto Varas</option>
+                    <option value="183">Puerto Montt</option>
+                    <option value="184">Osorno</option>
+                    <option value="185">Los Muermos</option>
+                    <option value="186">Llanquihue</option>
+                    <option value="187">Frutillar</option>
+                    <option value="188">Fresia</option>
+                    <option value="189">Dalcahue</option>
+                    <option value="190">Chonchi</option>
+                    <option value="191">Chaitén</option>
+                    <option value="192">Castro</option>
+                    <option value="193">Calbuco</option>
+                    <option value="194">Ancud</option>
+                    <option value="195">Alerce</option>
+                  </optgroup>
+                  <optgroup label="Aysén del General Carlos Ibáñez del Campo">
+                    <option value="196">Puerto Aysen</option>
+                    <option value="197">Coyhaique</option>
+                    <option value="198">Cochrane</option>
+                    <option value="199">Chile Chico</option>
+                  </optgroup>
+                  <optgroup label="Magallanes y la Antártica Chilena">
+                    <option value="200">Punta Arenas</option>
+                    <option value="201">Puerto Natales</option>
+                    <option value="202">Porvenir</option>
+                    <option value="203">Puerto Williams</option>
+                  </optgroup>
+                  <optgroup label="Metropolitana">
+                    <option value="204">Vitacura</option>
+                    <option value="205">Tiltil</option>
+                    <option value="206">Talagante</option>
+                    <option value="207">Santiago</option>
+                    <option value="208">San Ramon</option>
+                    <option value="209">San Miguel</option>
+                    <option value="210">San José de Maipo</option>
+                    <option value="211">San Joaquin</option>
+                    <option value="212">San Bernardo</option>
+                    <option value="213">Renca</option>
+                    <option value="214">Recoleta</option>
+                    <option value="215">Quinta Normal</option>
+                    <option value="216">Quilicura</option>
+                    <option value="217">Puente Alto</option>
+                    <option value="218">Pudahuel</option>
+                    <option value="219">Ciudad de los Valles</option>
+                    <option value="220">Providencia</option>
+                    <option value="221">El Principal</option>
+                    <option value="222">Peñalolen</option>
+                    <option value="223">Peñaflor</option>
+                    <option value="224">Pedro Aguirre Cerda</option>
+                    <option value="225">Paine</option>
+                    <option value="226">Ñuñoa</option>
+                    <option value="227">Melipilla</option>
+                    <option value="228">Bollenar</option>
+                    <option value="229">Maipú</option>
+                    <option value="230">Macul</option>
+                    <option value="231">Lo Prado</option>
+                    <option value="232">Lo ESpejo</option>
+                    <option value="233">Lo Barnechea</option>
+                    <option value="234">Las Condes</option>
+                    <option value="235">Lampa</option>
+                    <option value="236">Batuco</option>
+                    <option value="237">Valle grande</option>
+                    <option value="238">La Reina</option>
+                    <option value="239">La Pintana</option>
+                    <option value="240">La Granja</option>
+                    <option value="241">La Florida</option>
+                    <option value="242">La Cisterna</option>
+                    <option value="243">Isla de Maipo</option>
+                    <option value="244">La islita</option>
+                    <option value="245">Independencia</option>
+                    <option value="246">Hechuraba</option>
+                    <option value="247">Paine</option>
+                    <option value="248">Estación Central</option>
+                    <option value="249">El Monte</option>
+                    <option value="250">El Bosque</option>
+                    <option value="251">Curacaví</option>
+                    <option value="252">Conchali</option>
+                    <option value="253">Colina</option>
+                    <option value="254">Chamisero</option>
+                    <option value="255">Colina</option>
+                    <option value="256">Cerro Navia</option>
+                    <option value="257">Cerrillo</option>
+                    <option value="258">Calera de Tango</option>
+                    <option value="259">Buin</option>
+                    <option value="260">Alto Jahuel</option>
+                </optgroup>
+              </select>
+              </p>
+              </div>
+            <div class="form-group">
+              <p>
+                <label for="vivienda">Tipo de vivienda </label>
+                  <select class="form-control" name="vivienda" required>
+                      <option value="">Selecciona tu tipo de vivienda</option>
+                      <option value="1">Casa con patio grande</option>
+                      <option value="2">Casa con patio pequeño</option>
+                      <option value="3">Casa sin patio</option>
+                      <option value="4">Departamento</option>
+                    </select>
+                </p>
+            </div>
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Enviar</button>
+            </div>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        Pamela Ruiz <strong> / Gatunos </strong>
+      </p>
+      <div class="credits">
+        Full stack Python Trainee
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/Validaciones.js"></script>
+
+</body>
+</html>
